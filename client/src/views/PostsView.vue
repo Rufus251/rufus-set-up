@@ -1,14 +1,17 @@
 <template>
-<h1>posts</h1>
+  <div class="wrapper">
+    <h1>posts</h1>
+    
+    <ul class="list">
+      <li class="item"
+          v-for="item of posts"
+          :key="item._id"
+      >
+        <router-link :to="'/post/' + item._id">ID: {{ item._id }}</router-link>
+      </li>
+    </ul>
 
-  <ul class="list">
-    <li class="item"
-        v-for="item of posts"
-        :key="item._id"
-    >
-      <router-link :to="'/post/' + item._id">ID: {{ item._id }}</router-link>
-    </li>
-  </ul>
+  </div>
 </template>
 
 <script>

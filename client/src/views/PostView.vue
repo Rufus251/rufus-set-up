@@ -1,8 +1,10 @@
 <template>
-<h1>post</h1>
-
-  <h2 v-if="post" >{{ post.author }}</h2>
-  <p v-if="post" >{{ post.text }}</p>
+  <div class="wrapper">
+    <h1>post</h1>
+  
+    <h2 v-if="post" >{{ post.author }}</h2>
+    <p v-if="post" >{{ post.text }}</p>
+  </div>
 </template>
 
 <script>

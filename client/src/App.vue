@@ -1,13 +1,15 @@
 <template>
-  <HeaderComponent />
-  <section class="page">
-    <router-view />
-  </section>
+  <div class="wrapper">
+    <HeaderComponent />
+    <section class="page">
+      <router-view />
+    </section>
+  </div>
 </template>
 
-<script setup lang="ts">
-import { RouterView } from 'vue-router'
-import HeaderComponent from "@/components/HeaderComponent.vue";
+<script setup>
+  import { RouterView } from 'vue-router';
+  import HeaderComponent from "./components/HeaderComponent.vue";
 </script>
 
 <style scoped>
